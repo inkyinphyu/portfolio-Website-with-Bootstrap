@@ -1,0 +1,54 @@
+.about-me-title,.services-title{
+    position: relative;
+}
+.about-me-title::before,.services-title::before{
+    content: "";
+    width: 100px;
+    background-color: #dc354f;
+    height: 3px;
+    bottom: -7px;
+    position: absolute;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    /*animation: circle-animation 2s 5;
+    -webkit-animation: circle-animation 2s 5;
+    */transform: translate(100px);
+    background-color: red;
+
+}
+
+@keyframes circle-animation {
+    /* 0%{
+        transform: rotate(180deg);
+        background-color: red;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+} */
+    30%{
+        transform:translate(100px,-100%);
+        background-color: blue;
+        -webkit-transform:translate(100px,-100%);
+        -moz-transform:translate(100px,-100%);
+        -ms-transform:translate(100px,-100%);
+        -o-transform:translate(100px,-100%);
+}
+    /* 50%{
+        transform:translate(100px,-100px);
+        background-color: blue;
+        -webkit-transform:translate(100px,-100px);
+        -moz-transform:translate(100px,-100px);
+        -ms-transform:translate(100px,-100px);
+        -o-transform:translate(100px,-100px);
+} */
+
+}
